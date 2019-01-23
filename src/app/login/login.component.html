@@ -1,0 +1,39 @@
+<div class="card" style="width:50%; margin-left: 20%">
+    <div class="row"><p></p></div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                  
+            <div style="margin-left: 30%">
+                <p style="width:50%; margin-top: 5%; text-align: center"><b><u><h3>Login</h3></u></b></p>
+            </div>
+
+
+            <div class="form-group">
+                <label for="uid">Userid</label>
+                <input type="text"  class="form-control" formControlName="uid" name="uid" id="uid" placeholder="Enter userID" [ngClass]="{ 'is-invalid': submitted && f.uid.errors }">
+                <div *ngIf="submitted && f.uid.errors" class="invalid-feedback">
+                    <div *ngIf="f.uid.errors.required">Password is required</div>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="pwd">Password</label>
+                <input type="password" class="form-control" id="pwd" formControlName="pwd" name="pwd" placeholder="Enter password" [ngClass]="{ 'is-invalid': submitted && f.pwd.errors }">
+                <div *ngIf="submitted && f.pwd.errors" class="invalid-feedback">
+                    <div *ngIf="f.pwd.errors.required">Password is required</div>
+                </div>
+            </div>  
+            
+            <div class="form-group" style="margin-left: 30%">
+                <button type="submit" style="width:50%; margin-top: 5%; text-align: center" class="btn btn-dark">Login</button>
+            </div>
+          
+        </form>
+        <div class="row"><p></p></div>
+      </div>
+    </div>
+  </div>  
+  <div class="row"><p></p></div>
+  <div class="row"><p></p></div>

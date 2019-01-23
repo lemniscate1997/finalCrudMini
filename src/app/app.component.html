@@ -1,0 +1,13 @@
+<div class="container" style="margin-top:3%">
+  <div class="row">
+    <div class="col">
+      <app-nav [navbar] = "showAfterLogin"></app-nav>
+    </div>
+  </div>
+  <div class="row" style="margin-top:5%">
+      <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <router-outlet (activate) = "changeOfRoutes()"></router-outlet>
+    </div>
+  </div>
+</div>

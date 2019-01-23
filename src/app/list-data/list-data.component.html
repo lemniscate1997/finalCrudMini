@@ -1,0 +1,54 @@
+<div class="card">
+  <div class="row"><p></p></div>
+  <div class="row">
+    
+    <div class="col-sm-5">
+      <div style="margin-bottom:5%; margin-left: 15%">
+        <nav class="navbar">
+          <input class="form-control mr-sm-2" type="search" aria-label="search" placeholder="search" name="search" [(ngModel)]="filter">      
+        </nav>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-2">
+      <div style="margin-top:5%">
+        <button class="btn btn-success" type="button" (click)="newStud()">
+          AddNewStudent
+        </button>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-2">
+      <div style="margin-top:5%">
+        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          ViewFullDetails
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row"><p></p></div>
+
+<div class="card" >
+  <div class="container">
+    <div class="row"><p></p></div>
+    <div class="row">
+      <div class="col-sm-2" style="text-align:center"><b>#</b></div>
+      <div class="col-sm-3" style="text-align:center" (click)="sort('name')"><b>NAME</b></div>
+      <div class="col-sm-3" style="text-align:center" (click)="sort('dob')"><b>DOB</b></div>
+      <div class="col-sm-4" style="text-align:center"><b>ACTION</b></div>
+    </div>
+    <div class="row"><p></p></div>
+  </div>
+</div>
+<div class="row"><p></p></div>
+<li class="list-group-item" *ngFor = "let item of students | orderBy: key : reverse | filter:filter | paginate : { itemsPerPage:page, currentPage:p } ; let i = index">
+  <div>
+    <app-view-data [item]="item" [no]="i" (deleteData)="deleteStudent($event)"></app-view-data>
+  </div>
+</li>
+<div class="row"><p></p></div>
+<div class="card">
+  <div class="row"><p></p></div>
+  <div class="row"><pagination-controls (pageChange)="p = $event"></pagination-controls></div>
+</div>
