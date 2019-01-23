@@ -1,0 +1,120 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "rahul",
+      "uid": "rahul",
+      "pwd": "rahul1234",
+      "dob": "1997-12-26",
+      "email": "rahul@gmail.com",
+      "mob": "9855634754"
+    },
+    {
+      "name": "rushbh",
+      "uid": "rushbh",
+      "pwd": "rahul1234",
+      "dob": "2019-10-01",
+      "email": "rushbh@gmail.com",
+      "mob": "7865234578",
+      "id": 2
+    }
+  ],
+  "student": [
+    {
+      "id": 1,
+      "name": "rahul",
+      "uid": "rahul",
+      "dob": "1997-12-26",
+      "email": "rahul@gmail.com",
+      "mob": "9855634754"
+    },
+    {
+      "id": 2,
+      "name": "ravi",
+      "uid": "ravi",
+      "dob": "1997-12-27",
+      "email": "ravi@gmail.com",
+      "mob": "8575462535"
+    },
+    {
+      "id": 3,
+      "name": "brijesh",
+      "uid": "brijesh",
+      "dob": "1998-06-12",
+      "email": "brijesh@gmail.com",
+      "mob": "7564852345"
+    },
+    {
+      "id": 4,
+      "name": "mehul",
+      "uid": "mehul",
+      "dob": "1998-01-03",
+      "email": "mehul@gmail.com",
+      "mob": "7864251536"
+    },
+    {
+      "id": 5,
+      "name": "himanshu",
+      "uid": "himanshu",
+      "dob": "1997-12-12",
+      "email": "himanshu@gmail.com",
+      "mob": "9965482515"
+    },
+    {
+      "id": 6,
+      "name": "rushabh",
+      "uid": "rushabh",
+      "dob": "1997-15-10",
+      "email": "rushabh@gmail.com",
+      "mob": "7844623566"
+    },
+    {
+      "id": 7,
+      "name": "dhruvin",
+      "uid": "dhruvin",
+      "dob": "1997-18-11",
+      "email": "dhruvin@gmail.com",
+      "mob": "7896542315"
+    },
+    {
+      "id": 8,
+      "name": "dhruvesh",
+      "uid": "dhruvesh",
+      "dob": "1997-01-12",
+      "email": "dhruvesh@gmail.com",
+      "mob": "8845671542"
+    },
+    {
+      "id": 9,
+      "name": "bharat",
+      "uid": "bharat",
+      "dob": "1997-01-12",
+      "email": "bharat@gmail.com",
+      "mob": "9875421365"
+    },
+    {
+      "id": 10,
+      "name": "dhruvit",
+      "uid": "dhruvit",
+      "dob": "1997-29-12",
+      "email": "dhruvit@gmail.com",
+      "mob": "7798564215"
+    },
+    {
+      "name": "nishtha",
+      "uid": "nishtha",
+      "dob": "2019-01-17",
+      "email": "nishtha@gmail.com",
+      "mob": "9856427512",
+      "id": 11
+    },
+    {
+      "id": 12,
+      "name": "hiral",
+      "uid": "hiral",
+      "dob": "2019-01-17",
+      "email": "hiral@gmail.com",
+      "mob": "8652354575"
+    }
+  ]
+}
