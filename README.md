@@ -29,6 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 -------------------------------------------------------------------
 
-start json-server and watch db1.json to access data into application
+start json-server and watch db.json to access data into application
 
 -------------------------------------------------------------------
