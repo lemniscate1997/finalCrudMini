@@ -5,7 +5,7 @@
     <div class="col-sm-5">
       <div style="margin-bottom:5%; margin-left: 15%">
         <nav class="navbar">
-          <input class="form-control mr-sm-2" type="search" aria-label="search" placeholder="search" name="search" [(ngModel)]="filter">      
+          <input class="form-control mr-sm-2" type="search" aria-label="search" placeholder="search" name="search" [(ngModel)]="filter1">      
         </nav>
       </div>
     </div>
@@ -42,7 +42,7 @@
   </div>
 </div>
 <div class="row"><p></p></div>
-<li class="list-group-item" *ngFor = "let item of students | orderBy: key : reverse | filter:filter | paginate : { itemsPerPage:page, currentPage:p } ; let i = index">
+<li class="list-group-item" *ngFor = "let item of students | orderBy: key : reverse | filter:filter1 | paginate : { itemsPerPage:page, currentPage:p } ; let i = index">
   <div>
     <app-view-data [item]="item" [no]="i" (deleteData)="deleteStudent($event)"></app-view-data>
   </div>

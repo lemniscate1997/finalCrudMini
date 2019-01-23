@@ -37,6 +37,7 @@ export class ListDataComponent implements OnInit {
     this.router.navigate(['listdata/form']);
   }
 
+  filter1:any;
   key: string = 'id';
   reverse: boolean = false;
   sort(key){
